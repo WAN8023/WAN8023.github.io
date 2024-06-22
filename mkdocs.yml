@@ -19,9 +19,10 @@ nav:
     - zsh: linux/zsh.md
     - Git: ztbz/git.md
     - FAQ: tips/windows.md
-  - Markdown:
+  - MkDocs:
     - 传统语法: mkdocs.md
     - 扩展语法: extension.md
+    - HTML: html.md
     
 theme:
   name: material
@@ -66,9 +67,16 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - def_list
   - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.tabbed:
@@ -93,17 +101,20 @@ plugins:
       timezone: Asia/Shanghai
       type: datetime
       locale: zh
-  - git-committers:
-      enabled: !ENV [CI, false]
-      repository: WAN8023/WAN8023.github.io
-      branch: main
+#  - git-authors
+#  - git-committers:
+#      enabled: !ENV [CI, false]
+#      repository: WAN8023/WAN8023.github.io
+#      branch: main
   - search:
       separator: '[\s\u200b\-]'
-  - privacy
+#  - privacy
 
 extra:
   generator: false
 
+extra_javascript:
+  - javascripts/extra.js
+
 extra_css:
   - stylesheets/extra.css
-  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
