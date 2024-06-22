@@ -90,7 +90,9 @@ plugins:
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
       enable_creation_date: true
-      type: 
+      timezone: Asia/Shanghai
+      type: datetime
+      locale: zh
   - git-committers:
       enabled: !ENV [CI, false]
       repository: WAN8023/WAN8023.github.io
