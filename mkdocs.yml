@@ -1,1 +1,102 @@
-site_name: My Docs
+site_name: 啊吧啊吧的知识库
+#repo_url: https://github.com/WAN8023/WAN8023.github.io
+#edit_url: edit/main/docs/
+#repo_name: WAN8023
+copyright: Copyright &copy 2024 WAN8023
+
+dev_addr: 127.0.0.1:8000
+use_directory_urls: false
+
+nav:
+  - 简介: index.md
+  - 瞎搞:
+    - OpenWrt: ztbz/OpenWrt.md
+    - 随身WiFi: ztbz/wifi.md
+    - Nginx Proxy Manager: ztbz/Nginx Proxy Manager.md
+  - 笔记:
+    - Shell: linux/shell.md
+    - Linux常用命令: linux/command.md
+    - zsh: linux/zsh.md
+    - Git: ztbz/git.md
+    - FAQ: tips/windows.md
+  - Markdown:
+    - 传统语法: mkdocs.md
+    - 扩展语法: extension.md
+    
+theme:
+  name: material
+#  language: zh
+  favicon: assets/cheems.ico
+  logo: assets/cheems.ico
+  icon:
+    repo: fontawesome/brands/github
+    annotation: material/plus-circle-outline
+  features:
+    - search.highlight # 搜索结果高亮
+    - navigation.tracking # URL更新锚点
+    - navigation.instant
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+#    - content.action.edit
+#    - content.action.view
+    - content.code.copy
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: 切换至亮色模式
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.magiclink
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+      anchorlink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+  - git-committers:
+      enabled: !ENV [CI, false]
+  - search:
+      separator: '[\s\u200b\-]'
+  - privacy
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
