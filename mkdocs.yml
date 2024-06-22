@@ -89,8 +89,12 @@ markdown_extensions:
 plugins:
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
-#  - git-committers:
-#      enabled: !ENV [CI, false]
+      enable_creation_date: true
+      type: 
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: WAN8023/WAN8023.github.io
+      branch: main
   - search:
       separator: '[\s\u200b\-]'
   - privacy
