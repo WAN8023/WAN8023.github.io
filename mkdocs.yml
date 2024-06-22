@@ -89,8 +89,8 @@ markdown_extensions:
 plugins:
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
-  - git-committers:
-      enabled: !ENV [CI, false]
+#  - git-committers:
+#      enabled: !ENV [CI, false]
   - search:
       separator: '[\s\u200b\-]'
   - privacy
