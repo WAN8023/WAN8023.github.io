@@ -3,11 +3,25 @@
 ???+ info inline 
 	在左侧
 
-???+ warning inline end
-	在右侧
+```markdown
+- 代码块内好像不能用列表
+- 需要先声明Admonitions，内容会与其在同一行
+- 内容高度最好与Admonitions差不多一样高
+- 不然就会挤到一起
+- 就像下面这样
+```
 
-# 
-######
+???+ info inline end
+	在右侧
+	
+	拉长这个提示框
+	
+	比左边的框长
+	
+	下面的 tip 框就会缩在左侧
+
+!!! warning
+	收缩右侧的 info 框，下侧 tip 框会拉宽
 
 ???+ tip
 	Admonitions所支持的标签类型：note abstract info tip success question warning failure danger bug example quote
@@ -50,4 +64,7 @@
 ++ctrl+alt+del++
 
 H~2~O，A^T^A
+
+:pencil:
+:open_file_folder:			
 

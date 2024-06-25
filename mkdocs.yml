@@ -19,6 +19,10 @@ nav:
     - zsh: linux/zsh.md
     - Git: ztbz/git.md
     - FAQ: tips/windows.md
+  - ♥:
+    - 一言: favourite/yiyan.md
+    - 诗词: favourite/shici.md  
+    - 影视: favourite/yingshi.md
   - MkDocs:
     - 传统语法: mkdocs.md
     - 扩展语法: extension.md
@@ -101,11 +105,10 @@ plugins:
       timezone: Asia/Shanghai
       type: datetime
       locale: zh
-#  - git-authors
-#  - git-committers:
-#      enabled: !ENV [CI, false]
-#      repository: WAN8023/WAN8023.github.io
-#      branch: main
+  - git-committers:
+      enabled: !ENV [CI, false]
+      repository: WAN8023/WAN8023.github.io
+      branch: main
   - search:
       separator: '[\s\u200b\-]'
 #  - privacy

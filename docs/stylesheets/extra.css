@@ -1,3 +1,10 @@
-body {
+/*引入字体*/
+@font-face {
       font-family: "LXGW WenKai", sans-serif;
+      src: "https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.330/LXGWWenKaiLite-Regular.ttf";
     }
+
+/*使用字体*/
+:root {
+  --md-text-font: "LXGW WenKai"; 
+}
