@@ -19,10 +19,14 @@ nav:
     - zsh: linux/zsh.md
     - Git: ztbz/git.md
     - FAQ: tips/windows.md
+    - 维修: tips/fix.md
   - ♥:
     - 一言: favourite/yiyan.md
     - 诗词: favourite/shici.md  
-    - 影视: favourite/yingshi.md
+    - LOOK:
+      - 电影: favourite/movie.md
+      - 电视剧: favourite/tv.md
+      - 动漫: favourite/dongman.md
   - MkDocs:
     - 传统语法: mkdocs.md
     - 扩展语法: extension.md
@@ -86,7 +90,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - toc:
-      permalink: true
+      permalink: 👈
       toc_depth: 3
       anchorlink: true
   - pymdownx.superfences:
@@ -103,7 +107,7 @@ plugins:
       enabled: !ENV [CI, false]
       enable_creation_date: true
       timezone: Asia/Shanghai
-      type: datetime
+      type: timeago
       locale: zh
   - git-committers:
       enabled: !ENV [CI, false]
