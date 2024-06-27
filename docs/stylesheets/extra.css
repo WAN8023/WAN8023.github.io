@@ -1,8 +1,8 @@
-/*引入字体*/
+/*引入字体
 @font-face {
       font-family: "LXGW WenKai";
       src: "https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.330/LXGWWenKaiLite-Regular.ttf";
-    }
+    }*/
 
 /*常规字体，用于大多数*/
 :root {
