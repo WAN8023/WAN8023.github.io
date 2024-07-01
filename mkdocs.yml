@@ -15,6 +15,7 @@ nav:
     - Nginx Proxy Manager: ztbz/Nginx Proxy Manager.md
   - 笔记:
     - Shell: linux/shell.md
+    - Clash: tips/clash.md
     - Linux常用命令: linux/command.md
     - zsh: linux/zsh.md
     - Git: ztbz/git.md
@@ -44,12 +45,11 @@ theme:
     - search.highlight # 搜索结果高亮
     - navigation.tracking # URL更新锚点
     - navigation.instant
-    - navigation.expand
-    - navigation.path
+    - navigation.expand # 左侧导航栏默认展开所有
     - navigation.indexes
-    - navigation.top
-    - navigation.tabs
-    - navigation.sections
+    - navigation.top # 返回顶部按钮
+    - navigation.tabs # 顶部导航栏
+    - navigation.sections # 跟上面那个好像差不多
     - toc.follow
 #    - content.action.edit
 #    - content.action.view
@@ -125,4 +125,4 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css
-  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css # 引入字体

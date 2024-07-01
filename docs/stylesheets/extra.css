@@ -1,8 +1,9 @@
-/*引入字体
+/*此方法引入字体手机无法显示，不清楚是ttf字体格式问题还是引入方法问题。
 @font-face {
       font-family: "LXGW WenKai";
       src: "https://github.com/lxgw/LxgwWenKai-Lite/releases/download/v1.330/LXGWWenKaiLite-Regular.ttf";
     }*/
+
 
 /*常规字体，用于大多数*/
 :root {
