@@ -14,6 +14,7 @@ nav:
     - 随身WiFi: ztbz/wifi.md
     - Nginx Proxy Manager: ztbz/Nginx Proxy Manager.md
     - 3x-ui: ztbz/3X-UI.md
+    - 反向代理: ztbz/1panel.md
   - 笔记:
     - Shell: linux/shell.md
     - Clash: tips/clash.md
